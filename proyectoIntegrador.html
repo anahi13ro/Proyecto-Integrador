@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="proyectoIntegrador.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Nav------------------------------------------------- -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="Materiales\logo-verde.png"
+              alt="Logo"
+              width="40"
+              height="34"
+              class="d-inline-block align-text-top"
+            />
+            <b>Flex</b>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="container-fluid justify-content-end">
+              <ul class="navbar-nav justify-content-end p-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#contenedorMain">Producto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contenedorCaracteristicas"
+                    >Características</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contenedorPrecio">Precios</a>
+                </li>
+              </ul>
+            </div>
+            <div class="container-fluid justify-content-end">
+              <form class="d-flex justify-content-end">
+                <button
+                  class="btn btn-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  type="button"
+                >
+                  Ingresar
+                </button>
+                <button
+                  class="btn btn-outline-light me-2"
+                  id="nav-boton"
+                  type="button"
+                >
+                  Registrarse
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Modal -->
+      <div
+        class="modal fade main-modal"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content" id="color-modal">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div id="header-modal" class="div-modal">
+                <div id="img-modal">
+                  <img
+                    src="Materiales/logo-blanco.png"
+                    width="40px"
+                    height="30px"
+                    alt=""
+                  />
+                </div>
+                <h1 id="h1-modal"><b>Ingresa a tu cuenta</b></h1>
+                <h6 id="h6-modal">y empieza a conseguir resultados</h6>
+              </div>
+              <form class="form-modal" action="">
+                <div class="div-modal">
+                  <label class="form-label" for="">Correo</label>
+                  <input
+                    id="mailModal"
+                    class="form-control form-input"
+                    type="email"
+                    placeholder="tu-correo@senpaiacademy.com"
+                  />
+                  <label class="form-label" for="">Contraseña</label>
+                  <input
+                    id="passwordModal"
+                    class="form-control form-input"
+                    type="password"
+                    placeholder="************"
+                  />
+                </div>
+                <div class="div-row">
+                  <div>
+                    <input
+                      id="checkModal"
+                      class="form-check-input box"
+                      type="checkbox"
+                    />
+                    <label for="">Recordarme</label>
+                  </div>
+                  <label for=""
+                    ><a class="a-modal" href="">Olvide mi contraseña</a></label
+                  >
+                </div>
+                <button
+                  id="submitModal"
+                  class="btn btn-primary button-modal"
+                  type="submit"
+                >
+                  Ingresar
+                </button>
+                <p id="p-modal">
+                  Aún no tienes cuenta?
+                  <a id="aa-modal" class="a-modal" href=""> Registrarse</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Main foto------------------------------------------ -->
+      <div id="contenedorMain" class="container-fluid container-margin">
+        <div class="row">
+          <div class="col-md-6">
+            <h5 id="mainButton" class="badge bg-#2ad167 rounded-pill">NUEVO</h5>
+
+            <h1 class="banner-title">
+              <b>
+                La plataforma para <br />
+                las empresas del futuro
+              </b>
+            </h1>
+            <p class="banner-p">
+              Productos pensados para los negocios del próximo siglo
+            </p>
+            <button
+              id="buttonDemo"
+              type="button"
+              class="btn btn-lg btn-primary border-0"
+              class="rounded"
+            >
+              Solicitar demo
+            </button>
+            <button type="button" class="btn btn-lg btn-secundary border-0">
+              Registrarse
+            </button>
+          </div>
+          <div class="col-md-6 position-relative">
+            <img
+              src="./Materiales/header.jpg"
+              alt="Imagen del producto"
+              class="img-fluid"
+            />
+            <div class="banner-icons">
+              <img
+                src="./Materiales/circle3-yellow.svg"
+                class="banner-icon1"
+                alt="circle-yellow"
+              />
+              <img
+                src="./Materiales/dots3-blue.svg"
+                class="banner-icon2"
+                alt="dots-blue"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Caracteristicas --------------------------------------------- -->
+
+      <section id="contenedorCaracteristicas" class="container-margin">
+        <section class="caracteristicas">
+          <section class="contenedorIconoC">
+            <img class="iconoC" src="Materiales/mail-icon.svg" alt="" />
+          </section>
+          <h3 class="caracteristicasH">Capacitación</h3>
+          <p class="caracteristicasP">
+            Asistencia y capacitación de primer nivel
+          </p>
+        </section>
+        <section class="caracteristicas">
+          <section class="contenedorIconoC">
+            <img class="iconoC" src="Materiales/analytics-icon.svg" alt="" />
+          </section>
+          <h3 class="caracteristicasH">Analíticas claras</h3>
+          <p class="caracteristicasP">
+            Disfruta de un dashboard de analiticas claras y accionables
+          </p>
+        </section>
+        <section class="caracteristicas">
+          <section class="contenedorIconoC">
+            <img class="iconoC" src="Materiales/people-icon.svg" alt="" />
+          </section>
+          <h3 class="caracteristicasH">Soluciones para equipos</h3>
+          <p class="caracteristicasP">
+            Facilita el accionar de tu empresa con nuestra suite de herramientas
+          </p>
+        </section>
+      </section>
+
+      <!-- Carta Foto-------------------------------------------------------------- -->
+      <section id="contenedorPrecio" class="container-margin">
+        <h1 id="preciosFlexibles">Precios flexibles que escalan contigo</h1>
+        <p id="preciosFlexiblesP">
+          Nuestra facturación se ajusta al tamaño de tu empresa. Tiempo de
+          prueba de 7 dias en todos nuestros planes.
+        </p>
+      </section>
+
+      <div class="container container-margin">
+        <div class="row">
+          <div class="col sm-12 col xl-12" id="cartas">
+            <div
+              class="card text-center cartas-planbasico"
+              style="width: 18rem"
+            >
+              <div class="card-body">
+                <p class="cartas-preciosMarcados">PRECIO</p>
+                <h5 class="card-title cartas-planes">Plan básico</h5>
+                <h2 class="card-text">$10 /mes</h2>
+                <h5 class="carta-factura">Facturado anualmente</h5>
+                <ul class="cartas-listabenef">
+                  <li>1GB de almacenamiento</li>
+                  <li>Dashboard completo</li>
+                  <li>Asistencia por correo</li>
+                  <li>Hasta 10 miembros</li>
+                </ul>
+                <a href="#" class="btn btn-success botonDemo">Solicitar demo</a>
+              </div>
+            </div>
+            <div
+              class="card text-center cartas-planfreelance"
+              style="width: 18rem"
+            >
+              <div class="card-body">
+                <p class="cartas-preciosMarcados">PRECIO</p>
+                <h5 class="card-title cartas-planes">Plan freelancer</h5>
+                <h2 class="card-text">$99 /mes</h2>
+                <h5 class="carta-factura">Facturado anualmente</h5>
+                <ul class="cartas-listabenef">
+                  <li>Características básicas</li>
+                  <li>Asistencia preferencial</li>
+                  <li>100GB de almacenamiento</li>
+                  <li>Hasta 100 miembros</li>
+                </ul>
+                <a href="#" class="btn btn-success botonDemo">Solicitar demo</a>
+              </div>
+            </div>
+            <div
+              class="card text-center cartas-planempresas"
+              style="width: 18rem"
+            >
+              <div class="card-body">
+                <p class="cartas-preciosMarcados">PRECIO</p>
+                <h5 class="card-title cartas-planes">Plan empresas</h5>
+                <h2 class="card-text">$799 /mes</h2>
+                <h5 class="carta-factura">Facturado anualmente</h5>
+                <ul class="cartas-listabenef">
+                  <li>Características freelancer</li>
+                  <li>1TB de almacenamiento</li>
+                  <li>Asistencia telefónica 24/7</li>
+                  <li>Miembros ilimitados</li>
+                </ul>
+                <a href="#" class="btn btn-success botonDemo">Solicitar demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer------------------ -->
+
+    <footer class="containerFooter" id="footer-color">
+      <div id="div-padre">
+        <div class="container-fluid text-center footer-nav-color footer-logo">
+          <img
+            src="Materiales\logo-verde.png"
+            alt="Logo"
+            width="40"
+            height="34"
+            class="d-inline-block align-text-top"
+          />
+          <b>Flex</b>
+        </div>
+        <nav class="navbar navbar-expand-lg footer-nav-color">
+          <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Producto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Funcionalidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Precios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Recursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Carreras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Ayuda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary" href="#">Privacidad</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <hr />
+      <div class="text-center footer-nav-color">
+        ©️2022 Flex. Un producto ficticio de Senpai.
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="proyectoIntegrador.js"></script>
+  </body>
+</html>

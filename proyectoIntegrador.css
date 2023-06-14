@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif !important;
+    
+}
+
+main{
+    margin: 0em 2em !important;
+
+
+}
+
+footer{
+    width: 100% !important;
+    margin: 0px 0px !important;
+}
+
+.container-margin{
+    margin: 4em 0em;
+}
+
+/* Nav------------------------ */
+#nav-boton {
+    background-color: #2ad167;
+}
+.main-modal{
+    backdrop-filter: blur(4px);
+}
+#color-modal{
+    background-color: #2a3342;
+}
+
+.form-modal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+
+}
+.div-modal{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+#header-modal{
+    align-items: center;
+}
+#img-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2ad167;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+.div-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 0px;
+    font-size: 14px;
+
+}
+.modal-header{
+    border-bottom: 0px !important;
+
+}
+
+#p-modal{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+    font-size: 14px;
+}
+.form-label{
+    margin: 0px !important;
+}
+.form-input:focus{
+    box-shadow: 0 0 2pt 0.25pt #2ad167 !important;
+    
+}
+.button-modal{
+    background-color: #2ad167 !important;
+    border: 0 !important;
+}
+.a-modal{
+    color: #2ad167;
+    text-decoration: none;
+}
+#aa-modal{
+    padding-left: 5px;
+}
+#h6-modal{
+    color: #93a1b6;
+}
+.box:focus{    
+    box-shadow: 0 0 2pt 0.25pt #2ad167 !important;
+}
+.box:checked{
+    background-color: #2ad167 !important;
+    border-color: #2ad167 !important;
+    box-shadow: #2ad167 !important;
+
+}
+
+/* Main foto----------------------------- */
+#buttonDemo {
+    background-color: #2ad167 ;
+    color: white ;
+  }
+  #mainButton {
+    background-color: #2ad167;
+  }
+  .btn-secundary {
+    background-color: #f7f8f9;
+    color: black;
+  }
+  .banner-p {
+    color: #93a1b6;
+  }
+  .banner-icon1 {
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    top: -12%;
+    left: -12%;
+    z-index: 1;
+  }
+  .banner-icon2 {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    top: 84%;
+    left: 77%;
+    z-index: 1;
+  }
+
+
+
+
+
+/* Caracteristicas */
+
+
+.caracteristicasH{
+    font-size: 1em;
+    text-align: center;
+    color: #2a3342;
+    height: 40px;
+}
+.caracteristicasP{
+    font-size: 0.75em;
+    text-align: center;
+    color: #93a1b6;
+    height: 50px;
+}
+.iconoC{
+    background-color: #2ad16700;
+    width: 25px;
+    height: 25px;
+
+}
+.contenedorIconoC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #2ad167;
+}
+#contenedorCaracteristicas{
+    display: flex;
+}
+.caracteristicas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 30%;
+}
+
+/* Carta precios */
+
+
+.card-body{
+    background-color: #2ad1670e;
+}
+
+#preciosFlexibles{
+    font-size: 2em;
+    
+
+
+}
+#preciosFlexiblesP{
+    font-size: 1em;
+    color: #93a1b6;
+
+}
+
+#cartas{
+    display:flex;
+    justify-content: space-around;
+}
+.cartas-planbasico,
+.cartas-planfreelance,
+.cartas-planempresas{
+    border: 0 !important;
+    display: flex !important;
+    justify-content: center;
+}
+.cartas-listabenef{
+    list-style: none;
+    list-style-image: url('Materiales/Green-Tick-Vector-PNG-Images.png');
+    padding-left: 10px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+   
+}
+.botonDemo{
+    width: 100%;
+    background-color: #2ad167 !important;
+    color: white !important;
+    border: 0 !important;
+}
+.cartas-preciosMarcados{
+    background-color: #93a1b621;
+    border-radius: 15px;
+    width: 30%;
+    height: 8%;
+    margin: auto;
+    color: #2ad167 ;
+    
+}
+.carta-factura{
+    opacity: 50%;
+}
+.cartas-planes{
+    color:#2ad167;
+}
+
+/* footer----------------------------------- */
+
+#footer-color {
+    background-color: #2a3342;
+    color: #93a1b6;
+}
+.footer-nav-color {
+    background-color: #2a3342;
+    color: #93a1b6;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    /* margin: 2em; */
+
+}
+.color-link {
+    color: #93a1b6;
+}
+#div-padre{
+    padding-top: 15px;
+}
+
+
+
+@media(max-width:390px){
+
+    #contenedorCaracteristicas{
+        display: flex;
+        flex-direction: column;
+    }
+    .caracteristicasH{
+        height: auto;
+        font-size: 1.5em;
+    }
+    .caracteristicasP{
+        height: auto;
+        font-size: 1em;
+    }
+    #cartas{
+        display: block;
+    }
+    .banner-icon1{
+        top: 2%;
+
+    }
+    .banner-icon2{
+        top: 76%;
+
+    }
+}
+
+
